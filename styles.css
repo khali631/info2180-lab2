@@ -1,1 +1,86 @@
+/* Global Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 18px;
+    color: #2D3748;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* 3 parts for main content, 1 part for sidebar */
+    grid-template-rows: auto 1fr auto; /* Auto height for header and footer */
+    grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer";
+    gap: 20px; /* Adds space between the grid items */
+    flex:1;
+    padding: 20px;
+
+}
+
+footer {
+    background-color: #2C5282;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+    grid-area: footer; /* Ensure footer is positioned correctly in the grid */
+}
+
+main {
+    grid-area: main; /* Place main content in the main grid area */
+}
+
+aside {
+    grid-area: aside; /* Place sidebar in the aside grid area */
+}
+
+/* Header Styles */
+header {
+    background-color: #63B3ED;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Blog Post Styles */
+article {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 32px;
+    color: #48BB78;
+}
+
+footer {
+    background-color: #2C5282;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+}
+
+.profile-picture {
+    width: 150px;       /* Set the desired width */
+    height: 150px;      /* Set the desired height */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;  /
+}
+li {
+    color: #63B3ED;
+    Background-color: #FFFFFF;
+}
+
+h3 {
+    color: #48BB78;
+}
+
+h4 class="about-paragraph" {
+    Background-color: #d6cece; /* Pale gray color for the About paragraph */
+}
 
